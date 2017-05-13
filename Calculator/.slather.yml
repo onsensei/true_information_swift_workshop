@@ -1,0 +1,10 @@
+input_format: profdata
+coverage_service: cobertura_xml
+output_directory: slather-report
+scheme: Calculator
+xcodeproj: Calculator.xcodeproj
+ignore:
+    - ../**/*/Xcode*
+    - ../core/*
+    - CalculatorTests/*
+    - CalculatorUITests/*

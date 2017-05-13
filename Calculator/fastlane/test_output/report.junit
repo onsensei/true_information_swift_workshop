@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<testsuites name='CalculatorUITests.xctest' tests='9' failures='0'>
+  <testsuite name='CalculatorTests.CalculatorTests' tests='4' failures='0'>
+    <testcase classname='CalculatorTests.CalculatorTests' name='testAdd10with15_MustBe_25' time='0.002'/>
+    <testcase classname='CalculatorTests.CalculatorTests' name='testAdd10with5_MustBe_15' time='0.001'/>
+    <testcase classname='CalculatorTests.CalculatorTests' name='testDivide10with0_MustBe_nil' time='0.009'/>
+    <testcase classname='CalculatorTests.CalculatorTests' name='testDivide10with5_MustBe_2' time='0.002'/>
+  </testsuite>
+  <testsuite name='CalculatorTests.ValidatorTests' tests='4' failures='0'>
+    <testcase classname='CalculatorTests.ValidatorTests' name='testEmpty' time='0.001'/>
+    <testcase classname='CalculatorTests.ValidatorTests' name='testIsNumber' time='0.006'/>
+    <testcase classname='CalculatorTests.ValidatorTests' name='testNotEmpty' time='0.001'/>
+    <testcase classname='CalculatorTests.ValidatorTests' name='testString' time='0.001'/>
+  </testsuite>
+  <testsuite name='CalculatorUITests.CalculatorUITests' tests='1' failures='0'>
+    <testcase classname='CalculatorUITests.CalculatorUITests' name='testExample' time='19.985'/>
+  </testsuite>
+</testsuites>
