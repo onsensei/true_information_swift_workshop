@@ -22,4 +22,19 @@ class CalculatorTest: XCTestCase {
     }
     
     
+    func test10DivideBy5MustBe2WithCompletionBlock() {
+        calculator.divideTwoNumberWithCompletion(dividend: 10, divisor: 5){
+            (result, error) -> Void in
+            XCTAssertEqual(result, 2, "Result must be 2")
+        }
+    }
+    
+    func test10DivideBy0MustBeNilWithCompletionBlock() {
+        calculator.divideTwoNumberWithCompletion(dividend: 10, divisor: 0){
+            (result, error) -> Void in
+            XCTAssertNil(result, "Result must be nil")
+        }
+    }
+    
+    
 }
