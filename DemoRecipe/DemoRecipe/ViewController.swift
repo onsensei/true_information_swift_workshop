@@ -22,16 +22,16 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         cell.name?.text = recipes[indexPath.row]
         return cell
     }
-    
+    var selected = -1;
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
+        selected = indexPath.row
         performSegue(withIdentifier: "goto_detail", sender: self)
         
     }
     
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        var detailController = segue.destination as! DetailViewController
-//        
-//    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let detailController = segue.destination as! DetailViewController
+        detailController.name = recipes[selected]
+    }
 }
 
